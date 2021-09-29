@@ -1,0 +1,40 @@
+# 基础镜像， cuda为11.0，ubuntu18.04
+FROM image.rsaicp.com/base/cuda:11.0-cudnn8-runtime-ubuntu18.04
+
+# 配置程序依赖环境
+RUN apt-get update && apt-get install -y --no-install-recommends \
+         build-essential \
+         cmake \
+         curl \
+         ca-certificates \
+         libjpeg-dev \
+         libpng-dev \
+         python3 \
+         python3-dev \
+         python3-pip && \
+     rm -rf /var/lib/apt/lists/*
+
+# 安装torch
+RUN pip3 install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install matplotlib>=3.2.2
+RUN pip3 install numpy>=1.18.5
+RUN pip3 install scikit-build
+RUN pip3 install setuptools>=33.1.1
+RUN pip3 install Pillow
+RUN pip3 install PyYAML>=5.3.1
+RUN pip3 install scipy>=1.4.1
+RUN pip3 install torch>=1.7.0
+RUN pip3 install tqdm>=4.41.0
+RUN pip3 install grpcio
+RUN pip3 install tensorboard
+
+RUN pip3 install seaborn>=0.11.0
+RUN pip3 install pandas
+
+RUN pip3 install opencv-python>=4.1.2
+RUN python3 -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7/index.html
+# 将程序复制到容器内的/work路径下
+COPY .  /work
+#COPY ./weights/best.pt /work/weights/
+# 容器启动命令
+CMD ["python3", "-u", "/work/main.py"]

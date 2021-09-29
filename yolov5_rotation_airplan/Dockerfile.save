@@ -1,0 +1,21 @@
+# Start FROM Nvidia PyTorch image https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
+FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-devel
+
+# Install linux packages
+RUN apt update && apt-get install -y --no-install-recommends libgl1-mesa-glx libglib2.0-dev
+
+#COPY . /work/
+#COPY ./weights/best.pt /work/weights/best.pt
+#COPY ./infer_plane.sh /work/infer_plane.sh
+# Create working directory
+RUN
+    pip install -r requirements.txt && \
+    python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7/index.html
+
+
+#'WORKDIR /work/
+
+#CMD ["sh", "infer_plane.sh"]
+
+
+
