@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="998d2a64-4dc0-4c53-a119-e7fa2e610ba7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JupyterTrust" id="cfd87d94-9cbf-46ae-86b0-7e35fb0f333d" />
+  <component name="ProjectId" id="1yiC25qePUdu3qzQp3CG0DLVSI9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yolov5_rotation_airplan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="--input_dir ./input_data/ --output_dir ./output_data" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rotation" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="yolov5_rotation_airplan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rotation.py" />
+      <option name="PARAMETERS" value="--weights yolov5s.pt  --img 640  --workers 0  --cfg models/yolov5s_rotation.yaml  --data data/tzplane.yaml  --hyp data/hyp.scratch.yaml  --batch-size 1 --epochs 300" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.train_rotation" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="998d2a64-4dc0-4c53-a119-e7fa2e610ba7" name="Default Changelist" comment="" />
+      <created>1632724811326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632724811326</updated>
+      <workItem from="1632724812662" duration="4198000" />
+      <workItem from="1632729025189" duration="391000" />
+      <workItem from="1632729582857" duration="232000" />
+      <workItem from="1632729828396" duration="999000" />
+      <workItem from="1632733173676" duration="194000" />
+      <workItem from="1632733375699" duration="98000" />
+      <workItem from="1632733482466" duration="2841000" />
+      <workItem from="1632790155697" duration="9145000" />
+      <workItem from="1632806241128" duration="6431000" />
+      <workItem from="1632878253171" duration="3310000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="724" y="192" width="1084" height="722" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632795595275">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="295" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1632729856242" />
+    <state x="724" y="192" width="1084" height="722" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1632795595275" />
+    <state x="705" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632729002798">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="705" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1632729002798" />
+    <state x="840" y="305" width="424" height="484" key="FileChooserDialogImpl" timestamp="1632790941748">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="277" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1632728565849" />
+    <state x="840" y="305" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1632790941748" />
+    <state width="1807" height="308" key="GridCell.Tab.0.bottom" timestamp="1632881582016">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1632731855687" />
+    <state width="1807" height="308" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1632881582016" />
+    <state width="1807" height="308" key="GridCell.Tab.0.center" timestamp="1632881582016">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1632731855687" />
+    <state width="1807" height="308" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1632881582016" />
+    <state width="1807" height="308" key="GridCell.Tab.0.left" timestamp="1632881582016">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1632731855687" />
+    <state width="1807" height="308" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1632881582016" />
+    <state width="1807" height="308" key="GridCell.Tab.0.right" timestamp="1632881582016">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1632731855687" />
+    <state width="1807" height="308" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1632881582016" />
+    <state x="543" y="307" key="SettingsEditor" timestamp="1632795329943">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="793" y="209" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1632728888267" />
+    <state x="543" y="307" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1632795329943" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1632797886270">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1632797886270" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/yolov5_rotation_airplan$main.coverage" NAME="main Coverage Results" MODIFIED="1632881582005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolov5_rotation_airplan$train_rotation.coverage" NAME="train_rotation Coverage Results" MODIFIED="1632795365329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
